@@ -1,0 +1,15 @@
+{
+    #  earth tour
+    select { object "Sol/earth" }
+    follow { }
+    timerate {rate 500.0}
+    goto { time 8.0 distance 8.0 }
+    print { text "Welcome to Earth!" row -4 column 1 duration 10.0 }
+    wait { duration 8.0 }
+
+    select { object "Sol/Earth/moon"}
+    goto { time 5.0 distance 8.0 }
+    wait { duration 5 }
+    print {text "This is the moom!" row -4 column 1 duration 10.0}
+    changedistance { duration 1.5 rate 1.0 } 
+}
